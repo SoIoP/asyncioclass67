@@ -7,6 +7,7 @@ async def send_one():
         bootstrap_servers='localhost:9092')
     # Get cluster layout and initial topic/partition leadership information
     await producer.start()
+    #loop
     while True:
         try:
             # Produce message

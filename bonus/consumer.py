@@ -9,6 +9,7 @@ async def consume():
         group_id="my-group")
     # Get cluster layout and join group `my-group`
     await consumer.start()
+    
     try:
         # Consume messages
         async for msg in consumer:
